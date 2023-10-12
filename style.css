@@ -1,0 +1,159 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+  background-image:url("./assets/images/dark.avif");
+  background-size: cover;
+  background-color: rgb(41, 39, 39);
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: rgb(46, 46, 177);
+}
+
+@media (max-width : 600px) {
+  .main{
+    display: block;
+  }
+  .tile-image{
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  h1 {
+    color: rgb(57, 57, 185);
+    animation-name: text;
+    animation-duration:4s;
+    animation-iteration-count: 4;
+  }
+  
+  @keyframes text {
+    from {color: rgb(0, 0, 0);}
+    to {color: rgb(251, 251, 253);}
+  }
+
+  h1{
+    color:  rgb(44, 30, 126);
+    text-shadow: 6px 6px 4px rgb(238, 22, 22);
+    font-size: 50px;
+    text-align: center;
+  }
+
+  p{
+    text-align: justify;
+  }
+  .card-title{
+    display: inline;
+    margin: 0%;
+    color:rgb(202, 107, 19);
+  }
+  p {
+    color: red;
+    animation-name: example;
+    animation-duration:2s;
+    animation-iteration-count: 4;
+  }
+  
+  @keyframes example {
+    from {color: red;}
+    to {color: yellow;}
+  }
+  footer > p{
+    font-family: "Sofia", sans-serif;
+    color: rgb(255, 230, 0);
+    font-size: 30px;
+  }
+  
+
+  
+}
+
+@media (min-width:600px) {
+  .main{
+    flex: 1;
+  }
+  .card{
+    display: inline-block;
+  }
+  .tile-image{
+    float: left;
+    height:100px;
+    margin-right: 30px;
+  }
+  .card-title{
+    display: inline;
+    margin: 0%;
+    color: rgb(57, 57, 185);
+  }
+
+  .left{
+    width: 45%;
+    float: left;
+    margin-right: 5%;
+    text-align: justify;
+    box-shadow: 6px 6px 4px rgb(0, 47, 255);
+  }
+  .right{
+    width: 45%;
+    float: right;
+    margin-left: 5%;
+    text-align: justify;
+    box-shadow: 5px 6px 4px rgb(0, 47, 255);
+  }
+
+  h1 {
+    color: rgb(57, 57, 185);
+    animation-name: text;
+    animation-duration:4s;
+    animation-iteration-count: 4;
+  }
+  
+  @keyframes text {
+    from {color: rgb(0, 0, 0);}
+    to {color: rgb(251, 251, 253);}
+  }
+
+  h1{
+    color:  rgb(14, 5, 65);
+    text-shadow: 6px 6px 4px rgb(238, 22, 22);
+  }
+  
+  
+  .sp{
+    color: rgb(57, 57, 185);
+    display: block;
+    text-transform:uppercase;
+    
+  }
+  p{
+    margin-right: 5px;
+    font-weight: 400;
+  }
+  p {
+    color: red;
+    animation-name: example;
+    animation-duration:2s;
+    animation-iteration-count: 4;
+  }
+  
+  @keyframes example {
+    from {color: red;}
+    to {color: yellow;}
+  }
+  footer > p{
+    font-family: "Sofia", sans-serif;
+    color: rgb(255, 230, 0);
+    font-size: 30px;
+  }
+  
+}
